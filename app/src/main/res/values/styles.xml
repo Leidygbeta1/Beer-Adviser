@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Tema base de la aplicación -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Color primario (barra de acción y elementos principales) -->
+        <item name="colorPrimary">@color/black</item>
+        <!-- Color primario oscuro (barra de estado) -->
+        <item name="colorPrimaryDark">@color/black</item>
+        <!-- Color de acento (botones, switches, etc.) -->
+        <item name="colorAccent">@color/black</item>
+    </style>
+
+    <style name="CustomScrollbar">
+        <item name="android:scrollbarThumbVertical">@drawable/custom_scrollbar_thumb</item>
+        <item name="android:scrollbarTrackVertical">@drawable/custom_scrollbar_track</item>
+        <item name="android:scrollbarSize">9dp</item> <!-- Grosor de la barra -->
+        <item name="android:scrollbarStyle">outsideOverlay</item> <!-- Fuera del contenido -->
+    </style>
+
+</resources>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Beer Adviser</string>
+    <string name="categories_title">Categorías de Mascotas</string>
+    <string name="breeds_title">Razas</string>
+</resources>
