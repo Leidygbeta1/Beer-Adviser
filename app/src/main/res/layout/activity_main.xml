@@ -12,9 +12,9 @@
         android:id="@+id/titleTextView"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
-        android:text="@string/categories_title"
+        android:text="Categorías de Mascotas"
         android:textSize="24sp"
-        android:textColor="@color/primaryText"
+        android:textColor="@color/white"
         android:textStyle="bold"
         android:gravity="center"
         android:padding="16dp"
@@ -23,63 +23,61 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- RecyclerView para categorías -->
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/categoriesRecyclerView"
+    <!-- Spinner para seleccionar categorías -->
+    <Spinner
+        android:id="@+id/categoriesSpinner"
         android:layout_width="0dp"
-        android:layout_height="0dp"
+        android:layout_height="wrap_content"
         android:layout_marginTop="16dp"
         android:layout_marginStart="16dp"
         android:layout_marginEnd="16dp"
         android:padding="8dp"
         android:background="@drawable/card_background"
         android:elevation="4dp"
-        android:scrollbars="vertical"
-        android:scrollbarThumbVertical="@drawable/custom_scrollbar_thumb"
-        android:scrollbarTrackVertical="@drawable/custom_scrollbar_track"
-        android:scrollbarSize="9dp"
-        android:scrollbarStyle="outsideOverlay"
         app:layout_constraintTop_toBottomOf="@id/titleTextView"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/breedsTitleTextView"
-        app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent="0.4"/>
+        app:layout_constraintEnd_toEndOf="parent"/>
 
-    <!-- Título de las razas -->
-    <TextView
-        android:id="@+id/breedsTitleTextView"
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:text="@string/breeds_title"
-        android:textSize="20sp"
-        android:textColor="@color/primaryText"
-        android:textStyle="bold"
-        android:gravity="center"
-        android:padding="8dp"
-        android:background="@color/secondaryColor"
-        app:layout_constraintTop_toBottomOf="@id/categoriesRecyclerView"
+    <!-- Botón para mostrar razas -->
+
+    <!-- RecyclerView para mostrar razas -->
+
+    <Button
+        android:id="@+id/showBreedsButton"
+        android:layout_width="255dp"
+        android:layout_height="51dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="56dp"
+        android:layout_marginEnd="18dp"
+        android:background="@drawable/custom_scrollbar_thumb"
+        android:elevation="6dp"
+        android:fontFamily="sans-serif-medium"
+        android:paddingVertical="12dp"
+        android:text="Mostrar Razas"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.508"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="16dp"/>
+        app:layout_constraintTop_toBottomOf="@id/categoriesSpinner" />
 
-    <!-- RecyclerView para razas -->
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/breedsRecyclerView"
         android:layout_width="0dp"
         android:layout_height="0dp"
-        android:layout_marginTop="8dp"
         android:layout_marginStart="16dp"
+        android:layout_marginTop="16dp"
         android:layout_marginEnd="16dp"
-        android:padding="8dp"
-        android:background="@color/cardBackground"
+        android:background="@drawable/card_background"
         android:elevation="4dp"
-        android:scrollbars="vertical"
-        app:layout_constraintTop_toBottomOf="@id/breedsTitleTextView"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:padding="8dp"
         app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHeight_default="percent"
-        app:layout_constraintHeight_percent="0.4"/>
+        app:layout_constraintHeight_percent="0.4"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/showBreedsButton"
+        app:layout_constraintVertical_bias="0.233" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

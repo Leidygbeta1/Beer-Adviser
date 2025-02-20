@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <color name="primaryColor">#03DAC6</color>
+    <color name="primaryColor">#7E30EE</color>
     <color name="secondaryColor">#03DAC6</color>
     <color name="background">#F5F5F5</color>
     <color name="cardBackground">#FFFFFF</color>
@@ -8,4 +8,5 @@
     <color name="secondaryText">#757575</color>
     <color name="black">#000000</color>
     <color name="white">#FFFFFF</color>
+    <color name="gray">#808080</color>
 </resources>
